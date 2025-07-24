@@ -52,6 +52,7 @@ const ChatHeader = ({
       borderBottom={'sm'}
       color={'myGray.900'}
       fontSize={'sm'}
+      background={'white'}
     >
       {isPc ? (
         <>
@@ -133,7 +134,7 @@ const MobileDrawer = ({
       {/* menu */}
       <Box
         w={'100vw'}
-        px={[2, 5]}
+        px={[2, 3]}
         padding={2}
         onClick={(e) => e.stopPropagation()}
         background={'white'}
@@ -274,13 +275,9 @@ export const PcHeader = ({
       <Box mr={3} maxW={'200px'} className="textEllipsis" color={'myGray.1000'}>
         {title}
       </Box>
-      <MyTag>
-        <MyIcon name={'history'} w={'14px'} />
-        <Box ml={1}>
-          {totalRecordsCount === 0
-            ? t('common:core.chat.New Chat')
-            : t('common:core.chat.History Amount', { amount: totalRecordsCount })}
-        </Box>
+      <MyTag bg={'#f5f5f5'} color={'#000'}>
+        {/* <MyIcon name={'history'} w={'14px'} /> */}
+        <Box ml={1}>{t('common:core.chat.History Amount', { amount: totalRecordsCount })}</Box>
       </MyTag>
       {!!chatModels && chatModels.length > 0 && (
         <MyTooltip label={chatModels.join(',')}>

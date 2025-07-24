@@ -19,7 +19,7 @@ const PageContainer = ({
         boxShadow={'1.5'}
         overflow={'overlay'}
         bg={'myGray.25'}
-        borderRadius={[0, '16px']}
+        borderRadius={[0, '0px']}
         overflowX={'hidden'}
         {...insertProps}
       >

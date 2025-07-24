@@ -358,10 +358,11 @@ const ChatInput = ({
 
   return (
     <Box
-      m={['0 auto 10px', '10px auto']}
-      w={'100%'}
-      maxW={['auto', 'min(820px, 100%)']}
-      px={[3, 5]}
+      m={['0 auto 10px', '10px auto']} //解释：m为margin，auto为自动，10px为10px
+      w={'100%'} //解释：w为宽度，auto为自动，100%为100%
+      maxW={['auto', 'min(100%, 100%)']} //解释：maxW为最大宽度，auto为自动，min(90%, 100%)为最小90%，最大100%
+      p={[5, 5]} //解释：p为填充，auto为自动，10px为10px
+      px={[0, 5]} //解释：px为横向填充，auto为自动，10px为10px
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => {
         e.preventDefault();
@@ -389,10 +390,10 @@ const ChatInput = ({
     >
       {/* Real Chat Input */}
       <Flex
-        direction={'column'}
-        minH={mobilePreSpeak ? '48px' : ['96px', '120px']}
-        pt={fileList.length > 0 ? '0' : mobilePreSpeak ? [0, 4] : [3, 4]}
-        pb={[2, 4]}
+        direction={'column'} //解释：direction为方向，column为列
+        // minH={mobilePreSpeak ? '48px' : ['96px', '120px']} //解释：minH为最小高度，96px为96px，120px为120px
+        pt={fileList.length > 0 ? '0' : mobilePreSpeak ? [0, 4] : [3, 4]} //解释：pt为顶部填充，96px为96px，120px为120px
+        pb={[2, 4]} //解释：pb为底部填充，96px为96px，120px为120px
         position={'relative'}
         borderRadius={['xl', 'xxl']}
         bg={'white'}
