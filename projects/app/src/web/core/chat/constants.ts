@@ -4,7 +4,7 @@ export const htmlTemplate = `<!DOCTYPE html>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <title>智能体应用</title>
+    <title>智能体服务平台</title>
   </head>
   <style>
     .markdown > :first-child {

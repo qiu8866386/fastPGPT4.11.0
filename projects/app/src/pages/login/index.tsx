@@ -44,11 +44,11 @@ const Login = () => {
       h={'100%'}
     >
       {/* Language selector - login page */}
-      {isPc && (
+      {/* {isPc && (
         <Box position="absolute" top="24px" right="24px" zIndex={10}>
           <I18nLngSelector />
         </Box>
-      )}
+      )} */}
 
       <Flex
         flexDirection={'column'}

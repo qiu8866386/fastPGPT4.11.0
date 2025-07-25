@@ -44,13 +44,13 @@ const Navbar = ({ unread }: { unread: number }) => {
 
   const navbarList = useMemo(
     () => [
-      {
-        label: t('common:navbar.Chat'),
-        icon: 'core/chat/chatLight',
-        activeIcon: 'core/chat/chatFill',
-        link: `/chat?appId=${lastChatAppId}`,
-        activeLink: ['/chat']
-      },
+      // {
+      //   label: t('common:navbar.Chat'),
+      //   icon: 'core/chat/chatLight',
+      //   activeIcon: 'core/chat/chatFill',
+      //   link: `/chat?appId=${lastChatAppId}`,
+      //   activeLink: ['/chat']
+      // },
       {
         label: t('common:navbar.Studio'),
         icon: 'core/app/aiLight',

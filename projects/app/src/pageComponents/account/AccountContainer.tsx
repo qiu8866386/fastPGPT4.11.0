@@ -113,17 +113,17 @@ const AccountContainer = ({
             value: TabEnum.inform
           }
         ]
-      : [])
+      : []),
     // {
     //   icon: 'common/settingLight',
     //   label: t('common:Setting'),
     //   value: TabEnum.setting
     // },
-    // {
-    //   icon: 'support/account/loginoutLight',
-    //   label: t('account:logout'),
-    //   value: TabEnum.loginout
-    // }
+    {
+      icon: 'support/account/loginoutLight',
+      label: t('account:logout'),
+      value: TabEnum.loginout
+    }
   ]);
 
   const { openConfirm, ConfirmModal } = useConfirm({
