@@ -74,10 +74,10 @@ const SelectUsingWayModal = ({ share, onClose }: { share: OutLinkSchema; onClose
     setRefresh(!refresh);
   });
 
-  const baseUrl = feConfigs?.customSharePageDomain || location?.origin;
-  const linkUrl = `${baseUrl}${subRoute ? `${subRoute}/` : '/'}chat/share?shareId=${share?.shareId}${
-    getValues('showHistory') ? '' : '&showHistory=0'
-  }`;
+  // const baseUrl = feConfigs?.customSharePageDomain || location?.origin;
+  // const linkUrl = `${baseUrl}${subRoute ? `${subRoute}/` : '/'}chat/share?shareId=${share?.shareId}${
+  //   getValues('showHistory') ? '' : '&showHistory=0'
+  // }`;
   // const baseUrl = feConfigs?.customSharePageDomain || location?.origin;
   // const linkUrl = `${share?.shareId}${getValues('showHistory') ? '' : '&showHistory=0'}`;
 

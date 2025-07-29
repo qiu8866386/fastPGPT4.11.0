@@ -53,7 +53,7 @@ export async function uploadMongoImg({
 
   // return `${process.env.NEXT_PUBLIC_BASE_URL || ''}${imageBaseUrl}${String(_id)}.${extension}`;
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, '') || 'http://192.168.10.70:3000';
+    process.env.NEXT_PUBLIC_BASE_URL?.replace(/\/$/, '') || 'http://60.217.65.250:3000/';
   return `${baseUrl}${imageBaseUrl}${String(_id)}.${extension}`;
 }
 
