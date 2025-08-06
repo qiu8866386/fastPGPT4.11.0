@@ -17,12 +17,12 @@ const nextConfig = {
         source: '/((?!chat/share$).*)',
         headers: [
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
-          },
-          {
             key: 'X-Content-Type-Options',
             value: 'nosniff'
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN'
           },
           {
             key: 'X-XSS-Protection',
