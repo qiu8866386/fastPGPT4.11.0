@@ -199,7 +199,7 @@
   "tts_ai_model": "使用语音合成模型",
   "tts_browser": "浏览器自带(免费)",
   "tts_close": "关闭",
-  "type.All": "全部",
+  "type.All": "团队应用",
   "type.Create http plugin tip": "通过 OpenAPI Schema 批量创建插件，兼容 GPTs 格式",
   "type.Create mcp tools tip": "通过输入 MCP 地址，自动解析并批量创建可调用的 MCP 工具",
   "type.Create one plugin tip": "可以自定义输入和输出的工作流，通常用于封装重复使用的工作流",
