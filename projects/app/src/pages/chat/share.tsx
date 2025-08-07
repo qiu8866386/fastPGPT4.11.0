@@ -254,7 +254,9 @@ const OutLink = (props: Props) => {
       <Flex
         h={'full'}
         gap={4}
-        {...(isEmbed ? { p: '0 !important', borderRadius: '0', boxShadow: 'none' } : { p: [0, 5] })}
+        p="0 !important"
+        boxShadow="none"
+        // {...(isEmbed ? { p: '0 !important', borderRadius: '0', boxShadow: 'none' } : { p: [0, 5] })}
       >
         {(!datasetCiteData || isPc) && (
           <PageContainer flex={'1 0 0'} w={0} p={'0 !important'}>

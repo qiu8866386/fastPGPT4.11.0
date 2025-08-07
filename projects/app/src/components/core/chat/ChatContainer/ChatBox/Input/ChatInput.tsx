@@ -360,8 +360,9 @@ const ChatInput = ({
     <Box
       m={['0 auto 10px', '10px auto']}
       w={'100%'}
-      maxW={['auto', 'min(820px, 100%)']}
-      px={[3, 5]}
+      maxW={['auto', 'min(100%, 100%)']}
+      p={[5, 5]}
+      px={[0, 5]}
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => {
         e.preventDefault();
@@ -390,7 +391,7 @@ const ChatInput = ({
       {/* Real Chat Input */}
       <Flex
         direction={'column'}
-        minH={mobilePreSpeak ? '48px' : ['96px', '120px']}
+        // minH={mobilePreSpeak ? '48px' : ['96px', '120px']}
         pt={fileList.length > 0 ? '0' : mobilePreSpeak ? [0, 4] : [3, 4]}
         pb={[2, 4]}
         position={'relative'}

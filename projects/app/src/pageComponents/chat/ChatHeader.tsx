@@ -274,8 +274,8 @@ export const PcHeader = ({
       <Box mr={3} maxW={'200px'} className="textEllipsis" color={'myGray.1000'}>
         {title}
       </Box>
-      <MyTag>
-        <MyIcon name={'history'} w={'14px'} />
+      <MyTag bg={'#f5f5f5'} color={'#000'}>
+        {/* <MyIcon name={'history'} w={'14px'} /> */}
         <Box ml={1}>
           {totalRecordsCount === 0
             ? t('common:core.chat.New Chat')

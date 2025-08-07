@@ -28,7 +28,7 @@ const ModelProvider = () => {
       <FillRowTabs<TabType>
         list={[
           { label: t('account:active_model'), value: 'model' },
-          { label: t('account:config_model'), value: 'config' },
+          { label: t('account:config_model'), value: 'config' }
           // @ts-ignore
           // ...(feConfigs?.show_aiproxy
           //   ? [
